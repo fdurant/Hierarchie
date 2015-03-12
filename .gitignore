@@ -1,0 +1,8 @@
+_site
+.DS_Store
+*~
+.ipynb_checkpoints
+data/static
+data/dynamic
+nohup.out
+*.pyc

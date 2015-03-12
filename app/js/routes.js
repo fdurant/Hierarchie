@@ -2,16 +2,13 @@ angular.module('hierarchie')
   .config(['$routeProvider',
     function($routeProvider) {
       $routeProvider.when('/', {
-        templateUrl: 'app/views/charts.html',
-        controller: 'MainCtrl'
+        templateUrl: 'app/views/kiva.html',
+        controller: 'KivaCtrl'
       })
-        .when('/fcc', {
-          templateUrl: 'app/views/fcc.html',
-          controller: 'FccCtrl'
-        })
-        .when('/about', {
-          templateUrl: 'app/views/about.html'
-        })
+	.when('/projects/kiva-topic-modelling-project/', {
+		templateUrl: 'app/views/kiva.html',
+		    controller: 'KivaCtrl'
+		    })
         .otherwise({
           redirectTo: '/'
         });

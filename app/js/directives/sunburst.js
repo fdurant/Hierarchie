@@ -78,7 +78,7 @@ angular.module('hierarchie.directives')
 
             var partition = d3.layout.partition()
               .value(function(d) {
-                return d.depth;
+		return d.size;
               });
 
             var arc = d3.svg.arc()
